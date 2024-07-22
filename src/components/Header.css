@@ -1,0 +1,10 @@
+h1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+h1 span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
