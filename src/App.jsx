@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Form from './components/Form'
+import ImageContent from './components/ImageContent'
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
     <Header />
     <Form/>
+    <ImageContent />
     </>
   )
 }

@@ -21,3 +21,15 @@ button {
     background-color: hsl(223, 87%, 63%);
     cursor: pointer;
 }
+
+.error {
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-size: 0.7rem;
+    position: relative;
+    left: 1rem;
+}
+
+.input-error {
+    border: 2px solid hsl(354, 100%, 66%);
+}

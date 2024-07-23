@@ -4,6 +4,7 @@ import "./Form.css"
 function Form() {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
+    const [hasError, setHasError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,17 +19,23 @@ function Form() {
 
         if (!emailRegex.test(value)) {
             setError('Please provide a valid email address');
-            
+            setHasError(true);
         } else {
             setError('');
+            setHasError(false);
         }
     }
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Your email address...' value={email} onInput={handleEmailValidation}/>
-        <p>{error}</p>
+        <input 
+        type="text" 
+        placeholder='Your email address...' 
+        value={email} 
+        onInput={handleEmailValidation}
+        className={hasError ? 'input-error' : ''}/>
+       {hasError &&  <p className='error'>{error}</p>}
         
         <button type='Submit'>Notify Me</button>
       </form>
