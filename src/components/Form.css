@@ -35,3 +35,25 @@ button {
 .input-error {
     border: 2px solid hsl(354, 100%, 66%);
 }
+
+@media screen and (min-width: 600px) {
+    form{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    input {
+        width: 23rem;
+    }
+
+    button{
+        width: 10rem;
+    }
+
+    .error {
+        position: absolute;
+        top: 3rem;
+        
+    }
+}

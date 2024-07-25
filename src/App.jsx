@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Form from './components/Form'
 import ImageContent from './components/ImageContent'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <Header />
     <Form/>
     <ImageContent />
+    <Footer/>
     </>
   )
 }

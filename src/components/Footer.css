@@ -1,0 +1,41 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container p {
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook {
+    width: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 100%;
+    border: 1px solid blue;
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(180deg);
+}
+
+.twitter, .instagram {
+    width: 1rem;
+    padding: 0.3rem 0.3rem;
+    border-radius: 100%;
+    border: 1px solid blue;
+    filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(180deg);
+    
+}
+
+.facebook:hover, 
+.twitter:hover,
+.instagram:hover {
+    cursor: pointer;
+    background-color: blue;
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(170deg);
+}

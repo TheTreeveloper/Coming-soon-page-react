@@ -2,3 +2,10 @@
     width: 80%;
     margin-bottom: 3rem;
 }
+
+@media screen and (min-width: 600px ) {
+
+    .image {
+        width: 50%;
+    }
+}
