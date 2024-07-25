@@ -49,6 +49,11 @@ button {
 
     button{
         width: 10rem;
+        
+    }
+
+    button:hover {
+        background-color: hsl(223, 85%, 69%);
     }
 
     .error {
